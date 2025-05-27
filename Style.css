@@ -1,3 +1,5 @@
+/* =========================================== Basics Of WebPage =========================================== */
+
 * {
   padding: 0;
   margin: 0;
@@ -8,321 +10,210 @@ body {
   color: white;
 }
 
-/* =========================================== Screen Cases - Infinity Screen =========================================== */
+/* =========================================== Header Section =========================================== */
 
-
-.Header_Main_Box {
+.Header_Full_Box {
   background-color: #721b1b;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
   width: 100vw;
   display: flex;
 }
 
-.Heading_Main {
+.Logo {
+  padding-left: 1vw;
+  padding-right: 20vw;
   padding-top: 2.5vh;
+  padding-bottom: 1vh;
+}
+
+#Logo {
+  width: 10vw;
+  height: 10vw;
+  justify-items: left;
+}
+
+@media (max-width: 700px) {
+  #Logo {
+    width: 13vw;
+    height: 13vw;
+  }
+
+}
+
+.Header_Heading {
+  padding-top: 3vh;
   padding-bottom: 2.5vh;
 }
 
-#Header_Main_Text {
+#Header_Heading_Text {
   color: rgb(255, 255, 44);
   text-align: center;
   text-decoration: none;
   font-size: 5vw;
-  padding-left: 5vw;
-  font-weight: 500;
-  margin-left: 5vh;
+  font-weight: 600;
+  text-shadow: 10px 1px 4px rgb(0 0 0 / 50%);
 }
 
-#Header_Main_Text:hover {
+#Header_Heading_Text:hover {
   text-decoration: none;
-}
-
-.Image_Logo {
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
-}
-
-#Main_Logo {
-  width: 15vh;
-  height: 15vh;
-  justify-items: left;
 }
 
 .Menu_Bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 1.5vh 2vw;
-  box-shadow: 0 0.2vh 0.5vw rgba(0, 0, 0, 0.2);
-  font-size: 3vw;
+  background-color: #ffffff;
+  padding: 0.5vh 1vw;
+  font-size: 2.2vw;
+  font-weight: 500;
 }
 
-.Social_Links a {
-  color: black;
+#YouTube_Link {
+  color: rgb(255, 0, 0);
   font-size: 3vw;
   margin-right: 1.5vw;
   text-decoration: none;
 }
 
-.Social_Links a:hover {
-  color: rgb(153, 153, 140);
+#YouTube_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
 }
 
-.Menu_Bar_Items a {
-  color: black;
+#FaceBook_Link {
+  color: rgb(47, 0, 255);
+  font-size: 3vw;
+  margin-right: 1.5vw;
   text-decoration: none;
-  padding: 1vh 1.5vw;
 }
 
-.Menu_Bar_Items a:hover {
-  background-color: lightgray;
+#FaceBook_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 0, 255);
 }
 
-.Main_Footer {
+#InstaGram_Link {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 3vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#InstaGram_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: #fff;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #fff;
+  background-clip: border-box;
+}
+
+#WhatsApp_Link {
+  color: rgb(5, 150, 0);
+  font-size: 3vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#WhatsApp_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 150, 0);
+}
+
+.Menu_Bar_Links {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 1vh 1vw;
+}
+
+.Menu_Bar_Links:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 2vh;
+}
+
+/* =========================================== Main Section =========================================== */
+
+
+
+/* =========================================== Footer Section =========================================== */
+
+.Footer_Full_Box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #721b1b;
   color: #fff;
-  padding: 2vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
 }
 
-.Text_Box {
+.Footer_Sub_Box {
   flex: 1;
-  margin: 1vh;
 }
 
-#Text_Box_Heading {
-  margin-bottom: 3vh;
+.Sub_Box_Heading {
   text-align: center;
   color: rgb(255, 255, 44);
-  font-size: 3vh;
+  font-size: 2vw;
+  margin-bottom: 1vh;
 }
 
-.Text_Box ul {
+#Sub_Box_Text {
+  color: #fff;
+  font-size: 2.5vh;
+  padding-left: 3vh;
+  text-align: center;
+}
+
+.Sub_Box_All_Links {
   list-style: none;
   padding: 0;
   text-align: left;
-  font-size: 2vh;
   width: 200px;
   margin: 0 auto;
 }
 
-
-.Text_Box ul li {
-  margin-bottom: 0.5vh;
-  font-size: 2vh;
-  margin-left: 75px;
+.Sub_Box_Links {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3vh;
+  text-align: center;
 }
 
 #SDA_Mobile_Number {
   color: wheat;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  text-align: center;
+  padding-left: 17vh;
 }
 
-.Footer_Text {
-  color: #fff;
-  font-size: 2vh;
-}
-
-.Text_Box ul li a {
-  color: #fff;
+#Maps_Click_Link {
   text-decoration: none;
+  color: #fff;
+  font-weight: 1000;
+  text-align: center;
 }
 
-.Text_Box ul li a:hover {
-  color: #66ff00;
-  text-decoration: none;
-}
-
-.Text_Box iframe {
+.Iframe {
   width: 25vw;
   height: 25vh;
   text-align: center;
 }
 
-#Maps_Loaction {
-  height: 20vh;
-}
-
-.Footer_Bottom {
-  text-align: center;
-  background-color: #5a1111;
-  padding: 1vh;
-}
-
-/* =========================================== Screen Cases - 575 px And Below - Footer Problem  =========================================== */
-
-@media (max-width: 575px) {
-
-  #Header_Main_Text {
-    color: rgb(255, 255, 44);
-    text-align: center;
-    text-decoration: none;
-    font-size: 5vw;
-    padding-left: 5vw;
-    font-weight: 500;
-    margin-left: 5vw;
-  }
-
-  #Maps_Loaction {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50vh;
-    width: 75vw;
-  }
-
-  #Text_Box_Heading {
-    margin-bottom: 3vh;
-    text-align: center;
-    color: rgb(255, 255, 44);
-    font-size: 3.5vh;
-  }
-
-  .Text_Box ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    font-size: 1.5vh;
-    width: 200px;
-    margin: 0 auto;
-  }
-
-
-  .Text_Box ul li {
-    margin-bottom: 0.5vh;
-    font-size: 1.5vh;
-    margin-left: 75px;
-  }
-
-  #SDA_Mobile_Number {
-    color: wheat;
-    text-decoration: none;
-    font-size: 2vh;
-  }
-
-  .Footer_Text {
-    color: #fff;
-    font-size: 2vh;
-  }
-}
-
-/* =========================================== Screen Cases - 500 px And 400px - Header Problem & Menu Bar Problem  =========================================== */
-
-@media (max-width: 500px) {
-
-  .Header_Main_Box {
-    background-color: #721b1b;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    width: 100vw;
-    display: flex;
-  }
-
-  #Header_Main_Text {
-    color: rgb(255, 255, 44);
-    text-align: center;
-    text-decoration: none;
-    font-size: 5vw;
-    padding-left: 4vw;
-    font-weight: 500;
-    margin-left: 4vw;
-  }
-
-  #Header_Main_Text:hover {
-    text-decoration: none;
-  }
-
-  .Image_Logo {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-  }
-
-  #Main_Logo {
-    width: 15vh;
-    height: 15vh;
-    justify-items: left;
-  }
-
-  #Main_Logo {
-    width: 15vh;
-    height: 15vh;
-    justify-items: left;
-  }
-}
-
-
-/* =========================================== Screen Cases - 430 px And Below - Header Problem =========================================== */
-
-@media (max-width: 430px) {
-
-  .Header_Main_Box {
-    background-color: #721b1b;
-    width: 100vw;
-    display: flex;
-  }
-
-  #Header_Main_Text {
-    color: rgb(255, 255, 44);
-    text-align: center;
-    text-decoration: none;
-    padding-left: 0vw;
-    margin-left: 7vw;
-    font-size: 5.2vw;
-    font-weight: 500;
-  }
-
-  #Header_Main_Text:hover {
-    text-decoration: none;
-  }
-
-  #Main_Logo {
-    width: 10vh;
-    height: 10vh;
-    justify-items: left;
-  }
-}
-
-/* =========================================== Screen Cases - 330 px And Below - Menu Bar Problem =========================================== */
-
-@media (max-width: 330px) {
-
-  .Menu_Bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 0.5vh 0.5vw;
-    box-shadow: 0 0.2vh 0.5vw rgba(0, 0, 0, 0.2);
-    font-size: 4vw;
-  }
-
-  .Social_Links a {
-    color: black;
-    font-size:4vw;
-    margin-right: 0.5vw;
-    text-decoration: none;
-  }
-
-  .Social_Links a:hover {
-    color: rgb(153, 153, 140);
-  }
-
-  .Menu_Bar_Items a {
-    color: black;
-    text-decoration: none;
-    padding: 0.5vh 0.5vw;
-  }
-
-  .Menu_Bar_Items a:hover {
-    background-color: lightgray;
-  }
+#Maps_Iframe {
+  width: 20vw;
+  color: red;
+  height: 32vh;
 }
