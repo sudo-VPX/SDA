@@ -10,10 +10,23 @@ body {
   color: white;
 }
 
+/* =========================================== Basic Variables =========================================== */
+
+:root {
+  --Header_Footer_Theme: #721b1b;
+  --Header_Footer_Text_Color: #ffff2c;
+  --YouTube_Color: #ff0000;
+  --FaceBook_Color: #2f00ff;
+  --InstaGram_Color: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  --WhatsApp_Color: #059600;
+  --TeleGram_Color: #00a7a7;
+  --Font_Size_Menu_Bar_Links: 2.2vw;
+}
+
 /* =========================================== Header Section =========================================== */
 
 .Header_Full_Box {
-  background-color: #721b1b;
+  background-color: var(--Header_Footer_Theme);
   width: 100vw;
   display: flex;
 }
@@ -45,7 +58,7 @@ body {
 }
 
 #Header_Heading_Text {
-  color: rgb(255, 255, 44);
+  color: var(--Header_Footer_Text_Color);
   text-align: center;
   text-decoration: none;
   font-size: 5vw;
@@ -67,69 +80,6 @@ body {
   font-weight: 500;
 }
 
-#YouTube_Link {
-  color: rgb(255, 0, 0);
-  font-size: 3vw;
-  margin-right: 1.5vw;
-  text-decoration: none;
-}
-
-#YouTube_Link:hover {
-  padding: 0.75vw;
-  border-radius: 10px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 0, 0);
-}
-
-#FaceBook_Link {
-  color: rgb(47, 0, 255);
-  font-size: 3vw;
-  margin-right: 1.5vw;
-  text-decoration: none;
-}
-
-#FaceBook_Link:hover {
-  padding: 0.75vw;
-  border-radius: 10px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(47, 0, 255);
-}
-
-#InstaGram_Link {
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  font-size: 3vw;
-  margin-right: 1.5vw;
-  text-decoration: none;
-}
-
-#InstaGram_Link:hover {
-  padding: 0.75vw;
-  border-radius: 10px;
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  color: #fff;
-  -webkit-background-clip: border-box;
-  -webkit-text-fill-color: #fff;
-  background-clip: border-box;
-}
-
-#WhatsApp_Link {
-  color: rgb(5, 150, 0);
-  font-size: 3vw;
-  margin-right: 1.5vw;
-  text-decoration: none;
-}
-
-#WhatsApp_Link:hover {
-  padding: 0.75vw;
-  border-radius: 10px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(5, 150, 0);
-}
-
 .Menu_Bar_Links {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -142,6 +92,104 @@ body {
   border-radius: 2vh;
 }
 
+@media (max-width: 700px) {
+  .Menu_Bar {
+    font-size: 3vw;
+  }
+
+  :root {
+    --Font_Size_Menu_Bar_Links: 4vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .Menu_Bar {
+    font-size: 3.5vw;
+  }
+
+  :root {
+    --Font_Size_Menu_Bar_Links: 5vw;
+  }
+}
+
+
+#YouTube_Link {
+  color: var(--YouTube_Color);
+  font-size: var(--Font_Size_Menu_Bar_Links);
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#YouTube_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: var(--YouTube_Color);
+}
+
+#FaceBook_Link {
+  color: var(--FaceBook_Color);
+  font-size: var(--Font_Size_Menu_Bar_Links);
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#FaceBook_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: var(--FaceBook_Color);
+}
+
+#InstaGram_Link {
+  background: var(--InstaGram_Color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: var(--Font_Size_Menu_Bar_Links);
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#InstaGram_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  background: var(--InstaGram_Color);
+  color: #fff;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #fff;
+  background-clip: border-box;
+}
+
+#WhatsApp_Link {
+  color: var(--WhatsApp_Color);
+  font-size: var(--Font_Size_Menu_Bar_Links);
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#WhatsApp_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: var(--WhatsApp_Color);
+}
+
+#TeleGram_Link {
+  color: var(--TeleGram_Color);
+  font-size: var(--Font_Size_Menu_Bar_Links);
+  margin-right: 1.5vw;
+  text-decoration: none;
+}
+
+#TeleGram_Link:hover {
+  padding: 0.75vw;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: var(--TeleGram_Color);
+}
+
 /* =========================================== Main Section =========================================== */
 
 
@@ -152,10 +200,11 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #721b1b;
+  background-color: var(--Header_Footer_Theme);
   color: #fff;
   padding-top: 5vh;
   padding-bottom: 10vh;
+  text-align: center;
 }
 
 .Footer_Sub_Box {
@@ -164,9 +213,9 @@ body {
 
 .Sub_Box_Heading {
   text-align: center;
-  color: rgb(255, 255, 44);
+  color: var(--Header_Footer_Text_Color);
   font-size: 2vw;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 #Sub_Box_Text {
@@ -174,6 +223,14 @@ body {
   font-size: 2.5vh;
   padding-left: 3vh;
   text-align: center;
+  overflow: auto;
+  height: 35vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#Sub_Box_Text::-webkit-scrollbar {
+  display: none;
 }
 
 .Sub_Box_All_Links {
@@ -182,6 +239,7 @@ body {
   text-align: left;
   width: 200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .Sub_Box_Links {
@@ -189,6 +247,7 @@ body {
   color: #fff;
   font-size: 3vh;
   text-align: center;
+  line-height: 5vh;
 }
 
 #SDA_Mobile_Number {
@@ -196,24 +255,64 @@ body {
   text-decoration: none;
   font-size: 2.5vh;
   text-align: center;
-  padding-left: 17vh;
 }
 
 #Maps_Click_Link {
   text-decoration: none;
   color: #fff;
-  font-weight: 1000;
+  font-weight: 500;
   text-align: center;
+  font-size: 1.5vw;
 }
 
 .Iframe {
   width: 25vw;
   height: 25vh;
-  text-align: center;
 }
 
 #Maps_Iframe {
   width: 20vw;
-  color: red;
   height: 32vh;
+}
+
+@media (max-width: 900px) {
+  .Footer_Sub_Box {
+    flex: none;
+    width: 100vw;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 7vh;
+  }
+
+  .Footer_Sub_Box_Last {
+    flex: none;
+    width: 100vw;
+  }
+
+  .Sub_Box_Heading {
+    display: block;
+    font-size: 4vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+
+  #SDA_Mobile_Number {
+    font-size: 3.5vh;
+  }
+
+  #Maps_Click_Link {
+    font-size: 3.5vh;
+  }
+
+  .Iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+    height: 60vh;
+  }
+
+  #Maps_Iframe {
+    width: 75vw;
+    height: 60vh;
+  }
 }
