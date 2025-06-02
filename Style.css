@@ -20,7 +20,7 @@ body {
   --InstaGram_Color: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   --WhatsApp_Color: #059600;
   --TeleGram_Color: #00a7a7;
-  --Font_Size_Menu_Bar_Links: 2.2vw;
+  --Font_Size_Menu_Bar_Links: 2vw;
 }
 
 /* =========================================== Header Section =========================================== */
@@ -94,7 +94,7 @@ body {
 
 @media (max-width: 700px) {
   .Menu_Bar {
-    font-size: 3vw;
+    font-size: 2.75vw;
     padding: 0;
     margin: 0;
   }
@@ -106,7 +106,7 @@ body {
 
 @media (max-width: 500px) {
   .Menu_Bar {
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding: 0;
     margin: 0;
   }
